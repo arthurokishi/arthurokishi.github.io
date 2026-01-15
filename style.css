@@ -1,5 +1,5 @@
 :root{
-  --bg:#0b0f17;
+  --bg:#0a0e16;
   --panel:#0f1626;
   --muted:#9fb0c6;
   --text:#eaf0ff;
@@ -175,6 +175,7 @@ h1{
 
 .section{
   padding: 44px 0;
+  scroll-margin-top: 90px;
 }
 .section.alt{
   border-top: 1px solid var(--line);
@@ -283,4 +284,13 @@ h1{
 @media (max-width: 900px){
   .hero-grid{ grid-template-columns: 1fr; }
   .grid{ grid-template-columns: 1fr; }
+}
+
+.card, .item, .work{
+  transition: transform .15s ease, border-color .15s ease, background .15s ease;
+}
+.card:hover, .item:hover, .work:hover{
+  transform: translateY(-2px);
+  border-color: rgba(255,255,255,.18);
+  background: rgba(255,255,255,.045);
 }
