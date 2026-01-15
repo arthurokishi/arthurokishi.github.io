@@ -22,6 +22,11 @@ body{
 
 a{ color: var(--text); text-decoration: none; }
 a:hover{ text-decoration: underline; text-underline-offset: 4px; }
+.email-link{
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
 
 .container{
   width: min(1080px, calc(100% - 40px));
