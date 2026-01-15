@@ -356,6 +356,7 @@ h1{
 @media (max-width: 900px){
   .hero-grid{ grid-template-columns: 1fr; }
   .grid{ grid-template-columns: 1fr; }
+  .language-list{ grid-template-columns: 1fr; }
 }
 
 .card, .item, .work{
