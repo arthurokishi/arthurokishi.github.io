@@ -199,24 +199,37 @@ h1{
 .timeline{
   display:grid;
   gap: 14px;
-    position: relative;
-  padding-left: 22px;
+   position: relative;
+  padding-left: 36px;
 }
 .timeline::before{
   content: "";
   position: absolute;
-  left: 6px;
-  top: 4px;
-  bottom: 4px;
-  width: 2px;
-  background: rgba(255,255,255,.12);
+  left: 14px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, rgba(122,162,255,.0), rgba(122,162,255,.5), rgba(122,162,255,.0));
 }
 .item{
   border: 1px solid var(--line);
   background: rgba(255,255,255,.03);
   border-radius: var(--radius);
   padding: 16px;
-    position: relative;
+  position: relative;
+}
+.item::before{
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: 20px;
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  background: #f9fbff;
+  border: 3px solid var(--accent);
+  box-shadow: 0 0 0 6px rgba(122,162,255,.18);
 }
 .item::before{
   content: "";
