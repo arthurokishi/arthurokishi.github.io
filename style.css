@@ -199,12 +199,35 @@ h1{
 .timeline{
   display:grid;
   gap: 14px;
+    position: relative;
+  padding-left: 22px;
+}
+.timeline::before{
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 4px;
+  bottom: 4px;
+  width: 2px;
+  background: rgba(255,255,255,.12);
 }
 .item{
   border: 1px solid var(--line);
   background: rgba(255,255,255,.03);
   border-radius: var(--radius);
   padding: 16px;
+    position: relative;
+}
+.item::before{
+  content: "";
+  position: absolute;
+  left: -22px;
+  top: 22px;
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px rgba(122,162,255,.18);
 }
 .item-head{
   display:flex;
